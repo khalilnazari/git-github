@@ -105,6 +105,16 @@ git checkout commit_id
 git revert commit_id 
 ```
 
+### How to move to an older commit history wihtout branching? 
+1. Run 
+```
+git checkout commit_id . <file-name>
+```
+2. Mack your changes 
+3. Add change to staging 
+4. Commit you changes 
+
+
 
 ## Get remote details 
 Tip to get only the remote URL
