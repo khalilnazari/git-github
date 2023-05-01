@@ -94,7 +94,7 @@ b1f61c9 HEAD@{2}: commit: app2 commit
 d22f193 HEAD@{3}: commit (initial): app1 commit
 ```
 
-### Checkout to another Commit/Version 
+### Move to a specific Commit/Version 
 ```
 git checkout commit_id
 ```
@@ -103,11 +103,6 @@ git checkout commit_id
 ### Cancel a specfic Commit/Version
 ```
 git revert commit_id 
-```
-
-### Move to a specfic Commit/Version
-```
-git checkout commit_id 
 ```
 
 
@@ -128,4 +123,9 @@ git remote show [remote-name]
 For example, below command show remote origin details.
 ```
 git remote show origin
+```
+
+## Remove git from your directory completely 
+```
+rm -rf .git
 ```
