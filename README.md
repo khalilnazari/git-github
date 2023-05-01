@@ -2,8 +2,9 @@
 This page contains a number of Git and Github most used features 
 The first section
 `<br><br>`
-## Git commands for local repository
-### 1. Initialize git in a directory 
+
+# Git commands for local repository
+## 1. Initialize git in a directory 
 To initialize git in a directory run below command 
 
 ```
@@ -12,8 +13,7 @@ git init
 
 
 
-
-### 2. Configure Git 
+## 2. Configure Git 
 To configure Git run below commands. 
 ```
 git config –-global user.email "user-email" 
@@ -37,7 +37,7 @@ git add .
 ```
 
 
-### 4. Move changes out of staging area 
+## 4. Move changes out of staging area 
 To move back a file & dir from staging area, run below command 
 ```
 git rest file-name | directory
@@ -52,7 +52,7 @@ git checkout -- file-name
 ```
 
 
-### 5. Commit the files & folders 
+## 5. Commit the files & folders 
 To commit file staged contents, run belwo command
 ```
 git commit -m "write the commit message here"
@@ -69,14 +69,49 @@ git commit -m "Update your commit message" --ammend
 ```
 
 
-### Log your commits 
+### Log your Commits/Versions 
 This will print all of your activity / active commits 
 ```
 git log 
 ```
+Output: 
+```
+commit 5b7708018570bbc4a6edeafe86766a7e9ac0d805  //commit id or hash id
+Author: gitID <someone@somain.com>
+Date:   Mon May 1 11:31:03 2023 +0800
+
+    commit message
+```
+
+OR 
+```
+git reflog 
+```
+Output : 
+```
+da2045f HEAD@{1}: commit: app3 commit
+b1f61c9 HEAD@{2}: commit: app2 commit
+d22f193 HEAD@{3}: commit (initial): app1 commit
+```
+
+### Checkout to another Commit/Version 
+```
+git checkout commit_id
+```
 
 
-### Get remote details 
+### Cancel a specfic Commit/Version
+```
+git revert commit_id 
+```
+
+### Move to a specfic Commit/Version
+```
+git checkout commit_id 
+```
+
+
+## Get remote details 
 Tip to get only the remote URL
 ```
 git config --get remote.origin.url
