@@ -24,7 +24,7 @@ git config –-global user.name "user-name"
 
 
 
-### 3. Move file in staging area 
+### 3. Move changes in staging area 
 To move a file or folder into stagin area, run below command
 
 ```
@@ -37,7 +37,7 @@ git add .
 ```
 
 
-### 4. Reset staging area
+### 4. Move changes out of staging area 
 To move back a file & dir from staging area, run below command 
 ```
 git rest file-name | directory
@@ -45,6 +45,10 @@ git rest file-name | directory
 To move back all files & directories from staging area, run below command 
 ```
 git rest .
+```
+OR 
+```
+git checkout -- file-name 
 ```
 
 
