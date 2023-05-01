@@ -53,3 +53,24 @@ To commit file staged contents, run belwo command
 ```
 git commit -m "write the commit message here"
 ```
+
+
+
+### Get remote details 
+Tip to get only the remote URL
+```
+git config --get remote.origin.url
+```
+OR 
+```
+git remote -v
+```
+
+In order to get more details about a particular remote, use the
+```
+git remote show [remote-name]
+```
+For example, below command show remote origin details.
+```
+git remote show origin
+```
