@@ -54,6 +54,22 @@ To commit file staged contents, run belwo command
 git commit -m "write the commit message here"
 ```
 
+### Add another change to your previous commit
+When you miss to include a file in your commit or you make a mistake in your commit message, use this command 
+```
+git add the_change // to add the change 
+```
+and 
+```
+git commit -m "Update your commit message" --ammend 
+```
+
+
+### Log your commits 
+This will print all of your activity / active commits 
+```
+git log 
+```
 
 
 ### Get remote details 
